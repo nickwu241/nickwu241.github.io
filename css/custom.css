@@ -1,0 +1,33 @@
+ul {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+.m-b-30{
+	margin-bottom: 30px;
+}
+
+.m-y-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.p-a-left {
+	padding: 0px 30px 30px 50px;
+}
+
+.p-a-10 {
+	padding: 10px;
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.justify {
+	text-align: justify;
+}
