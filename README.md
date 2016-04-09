@@ -1,4 +1,7 @@
 # [Nicholas Wu](http://nickwu241.github.io)
+
+Here's my protoype website!
+
 ## Creator
 Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
