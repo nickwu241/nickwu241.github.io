@@ -1,15 +1,17 @@
-# [Nicholas Wu](http://nickwu241.github.io)
+#Nick's Personal Website
 
-Here's my protoype website!
+##Profolio website, work in progress!
 
-## Creator
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Credits:
+	Astral: 
+		html5up.net | @ajlkn
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)v
+		background-size polyfill (github.com/louisremi)
+		Repond.js (j.mp/respondjs)
+		Skel (skel.io)
