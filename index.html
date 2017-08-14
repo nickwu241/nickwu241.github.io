@@ -1,179 +1,70 @@
 <!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Modified by Nicholas Wu
--->
-<html>
-
+<html lang="en">
 <head>
-	<title>Nicholas Wu</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nicholas Wu</title>
+    <link rel="stylesheet" href="css/poole.css" type="text/css">
+    <link rel="stylesheet" href="css/hyde.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/vue"></script>
 </head>
-
 <body>
+<div id="app">
+    <div class="sidebar">
+        <div class="container sidebar-sticky">
+            <h1 style="color: #fff;">Nicholas Wu</h1>
+            <p class="lead">Software Developer & UBC CPEN Student</p>
+            <p>A simple & lightweight website to feature my projects and to have some fun :)</p>
 
-<!-- Wrapper-->
-<div id="wrapper">
+            <nav class="sidebar-nav">
+                <a v-for="(item, i) in navItems"
+                    class="sidebar-nav-item"
+                    :class="{ active : item.isActive }"
+                    @click="navItemClick(item, i)">
+                    {{item.name}}
+                </a>
+            </nav>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<a href="#me" class="icon fa-home active"><span>Home</span></a>
-		<a href="#projects" class="icon fa-pencil"><span>Projects</span></a>
-		<a href="#about" class="icon fa-envelope"><span>About</span></a>
-		<a href="assets/resume.pdf" class="icon fa-file-text"><span>Resume</span></a>
-	</nav>
+            <div class="sidebar-footer center">
+                <a class="fa fa-linkedin" href="https://linkedin.com/in/nick-wu/"></a>
+                <a class="fa fa-github" href="https://github.com/nickwu241/"></a>
+                <a class="fa fa-instagram" href="https://www.instagram.com/nickwu241/"></a>
+                <a class="fa fa-youtube" href="https://www.youtube.com/user/nickwu241"></a>
+            </div>
+        </div> <!-- .sidebar-sticky-->
+    </div> <!-- .sidebar-->
 
-	<!-- Main -->
-	<div id="main">
+    <div class="content container">
+        <div v-if="activeSection == 'Projects'" class="posts">
+            <project v-for="p in projects"
+            :title="p.name"
+            :description="p.description"
+            :date="p.date"
+            :ghlink="p.ghlink"
+            :imageinfo="p.imageinfo"
+            :tags="p.tags">
+            </project>
+        </div>
+        <div v-else-if="activeSection == 'Resume'">
+            <p>Please click <a href="/resume.pdf">here</a> to view my resume if it doesn't load or display properly.</p>
+            <embed type="application/pdf" src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="930px">
+        </div>
+        <div v-else-if="activeSection == 'About'">
+            <h1>Oooops...</h1>
+            <p>Hi sneaky visitors, unfortunately there's no about section yet but I am working on it.
+                But wow! I am flattered that you want to learn more about me :)</p>
+            <p>In the meantine, you can find me on social media!</p>
+            <a class="fa fa-linkedin fa-2x" href="https://linkedin.com/in/nick-wu/"></a>
+            <a class="fa fa-github fa-2x" href="https://github.com/nickwu241/"></a>
+            <a class="fa fa-instagram fa-2x" href="https://www.instagram.com/nickwu241/"></a>
+            <a class="fa fa-youtube fa-2x" href="https://www.youtube.com/user/nickwu241"></a>
+        </div>
+    </div> <!-- .content-->
 
-	<!-- Me -->
-	<article id="me" class="panel">
-	<div class ="row">
-		<div class="6u 12u$(mobile)">
-		<header>
-			<h1>NICHOLAS WU</h1>
-			<p class="title">Software Developer</p>
-			<div class="description">
-				<p>
-					Welcome, sneaky visitors!
-					This is a simple website to show off some of my personal projects.
-					BUT... in addition, I love to do lots of fun activites other than
-					developing software and hacking together hardware! Find out more about me 
-					<a href="#about" class="jumplink"><span>here</span></a>.
-				</p>
-			</div>
-			<ul class="icons contact">
-				<span>Find Nick @ </span>
-				<li><a href="https://github.com/nickwu241" class="icon contact-icon fa-github-square fa-2x"><span></span></a></li>
-				<li><a href="https://www.linkedin.com/in/nick-wu" class="icon contact-icon fa-linkedin-square fa-2x"><span></span></a></li>
-				<li><a href="https://www.youtube.com/user/nickwu241" class="icon contact-icon fa-youtube-square fa-2x"><span></span></a></li>
-				<li><a href="https://www.instagram.com/nickwu241" class="icon contact-icon fa-instagram fa-2x"><span></span></a></li>
-			</ul>
-		</header>
-		</div>
-		<div class="6u 12u$(mobile)">
-		<a href="#projects" class="jumplink pic">
-			<span class="arrow icon fa-arrow-right"><span>See my work</span></span>
-			<img src="images/fb_profile.jpg" alt="" />
-		</a>
-		</div>
-		
-	</div> 
-	</article> <!-- END Me -->
-
-	<!-- Projects -->
-	<article id="projects" class="panel">
-		<header>
-			<h2>Projects</h2>
-		</header>
-		<p>
-			This is a work in progress! I'll add my projects here one by one when I get the chance :)
-		</p>
-		<section>
-			<div class="row">
-				<div class="4u 12u$(mobile)">
-					<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-				</div>
-				<div class="8u 12u$(mobile)">
-					<p>
-						Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-						luctus elit eget interdum.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="4u 12u$(mobile)">
-					<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-				</div>
-				<div class="8u 12u$(mobile)">
-					<p>
-						Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-						luctus elit eget interdum.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="4u 12u$(mobile)">
-					<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-				</div>
-				<div class="8u 12u$(mobile)">
-					<p>
-						Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-						luctus elit eget interdum.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="4u 12u$(mobile)">
-					<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-				</div>
-				<div class="8u 12u$(mobile)">
-					<p>
-						Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-						luctus elit eget interdum.
-					</p>
-				</div>
-			</div>
-		</section>
-	</article> <!-- END Projects -->
-
-	<!-- About -->
-	<article id="about" class="panel">
-		<header>
-			<h2>About</h2>
-		</header>
-		<p>
-			Still working on this section too. For now, see my
-			<a href="assets/resume.pdf" class="icon jumplink"><span>resume</span></a>!
-		</p>
-		<p>
-			Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-			luctus elit eget interdum.
-		</p>
-		<p>
-			Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-			luctus elit eget interdum.
-		</p>
-	</article> <!-- END About -->
-
-	</div> <!-- END Main -->
-
-	<!-- Footer -->
-	<div id="footer">		
-		<ul class="icons contact">
-			<li><a href="https://github.com/nickwu241" class="icon contact-icon fa-github-square fa-2x"><span></span></a></li>
-			<li><a href="https://www.linkedin.com/in/nick-wu" class="icon contact-icon fa-linkedin-square fa-2x"><span></span></a></li>
-			<li><a href="https://www.youtube.com/user/nickwu241" class="icon contact-icon fa-youtube-square fa-2x"><span></span></a></li>
-			<li><a href="https://www.instagram.com/nickwu241" class="icon contact-icon fa-instagram fa-2x"><span></span></a></li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Nicholas Wu</li>
-		</ul>
-	</div>
-
-</div> <!-- END Wrapper -->
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/skel-viewport.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-
+</div> <!-- #app-->
+<script src="main.js"></script>
 </body>
-
 </html>
