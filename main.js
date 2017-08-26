@@ -49,11 +49,11 @@ var app = new Vue({
     data: {
         projects: projects,
         lastActiveNavIndex: 0,
-        navItems: navItems
+        navItems: navItems,
+        resumeHeight: 0
     },
     computed: {
         activeSection: function() {
-            console.log(this.navItems[this.lastActiveNavIndex].name);
             return this.navItems[this.lastActiveNavIndex].name;
         }
     },
@@ -63,6 +63,11 @@ var app = new Vue({
             this.navItems[this.lastActiveNavIndex].isActive = false;
             this.lastActiveNavIndex = itemIndex;
             item.isActive = true;
+
+            // setup the embed height based on our content width
+            if (item.name == "Resume") {
+                this.resumeHeight = document.getElementById("content-container").clientWidth * 1.2;
+            }
         }
     }
 })

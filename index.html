@@ -40,7 +40,7 @@
         </div> <!-- .sidebar-sticky-->
     </div> <!-- .sidebar-->
 
-    <div class="content container">
+    <div class="content container" id="content-container">
         <div v-if="activeSection == 'Projects'" class="posts">
             <project v-for="p in projects"
             :title="p.name"
@@ -53,7 +53,9 @@
         </div>
         <div v-else-if="activeSection == 'Resume'">
             <p>Please click <a href="/resume.pdf">here</a> to view my resume if it doesn't load or display properly.</p>
-            <embed type="application/pdf" src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="930px">
+            <embed type="application/pdf" src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
+                width="100%"
+                :height="resumeHeight">
         </div>
         <div v-else-if="activeSection == 'About'">
             <h1>Oooops...</h1>
