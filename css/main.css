@@ -16,6 +16,16 @@
     display: inline-block;
 }
 
+.avatar {
+    border-radius: 50%;
+    margin: 0;
+}
+
+.sidebar-name {
+    color: #fff;
+    margin: 0;
+}
+
 .button {
     background-color: #008CBA;
     color: white;
