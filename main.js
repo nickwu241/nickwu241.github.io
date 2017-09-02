@@ -27,13 +27,24 @@ const projects = [
     */
     {
         name: 'Food Shake',
-        date: 'March 2017 - Present',
+        date: 'March 2017 - May 2017',
         description: 'An Android application to solve “Where should we eat?” situations by randomly selecting a nearby restaurant on phone shake.',
         imageinfo: [
             {link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png', style: "max-width: 45%; margin-right: 2%;"},
             {link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png', style: "max-width: 45%;"}
         ],
         ghlink: 'https://github.com/nickwu241/FoodShake',
+        tags: []
+    },
+    {
+        name: 'Blackjack',
+        date: 'December 2015 - September 2016',
+        description: 'A desktop application for playing Blackjack. Implemented in Java using JavaFX for GUI.',
+        imageinfo: [
+            {link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_actions.png'},
+            {link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_win.png'}
+        ],
+        ghlink: 'https://github.com/nickwu241/blackjack-java',
         tags: []
     }
 ];
