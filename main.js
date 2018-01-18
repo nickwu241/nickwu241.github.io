@@ -7,7 +7,7 @@ Vue.component('project', {
             <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="img-inline">
         </div>
         <p>{{description}}</p>
-        <a class="button" :href="ghlink">View on Github</a>
+        <a class="button" :href="ghlink">Github</a>
         </div>
     </div>
     `,
@@ -15,16 +15,14 @@ Vue.component('project', {
 })
 
 const projects = [
-    /*
     {
         name: 'UBC Course Scheduler Creator',
-        description: 'A web application to output all possible course schedules given desired courses at UBC!',
-        imageinfo: [{link: 'https://placehold.it/800x400'}],
+        description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
+        imageinfo: [{link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png', style: "border: 1px solid black;"}],
         date: 'April 2017 - Present',
         ghlink: 'https://github.com/nickwu241/CourseScrapperUBC',
         tags: []
     },
-    */
     {
         name: 'Food Shake',
         date: 'March 2017 - May 2017',
