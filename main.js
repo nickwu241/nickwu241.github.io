@@ -14,7 +14,7 @@ Vue.component('project', {
     props: ['title', 'description', 'date', 'imageinfo', 'ghlink', 'tags']
 })
 
-const projects = [
+const PROJECTS = [
     {
         name: 'UBC Course Scheduler Creator',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
@@ -35,6 +35,16 @@ const projects = [
         tags: []
     },
     {
+        name: 'Desktop Launcher',
+        date: 'January 2017 – April 2017',
+        description: 'A toy turret that can aim, take photos, and be fired by the user.',
+        imageinfo: [
+            {link: 'https://raw.githubusercontent.com/ZeyadTamimi/DesktopLauncher/master/images/thumbnail_extended.png'}
+        ],
+        ghlink: 'https://zeyadtamimi.github.io/DesktopLauncher',
+        tags: []
+    },
+    {
         name: 'Blackjack',
         date: 'December 2015 - September 2016',
         description: 'A desktop application for playing Blackjack. Implemented in Java using JavaFX for GUI.',
@@ -47,7 +57,7 @@ const projects = [
     }
 ];
 
-const navItems = [
+const NAV_ITEMS = [
     {name: "Projects", isActive : true},
     {name: "Resume", isActive : false},
     {name: "About", isActive : false}
@@ -56,9 +66,9 @@ const navItems = [
 var app = new Vue({
     el: '#app',
     data: {
-        projects: projects,
+        projects: PROJECTS,
+        navItems: NAV_ITEMS,
         lastActiveNavIndex: 0,
-        navItems: navItems,
         resumeHeight: 0
     },
     computed: {

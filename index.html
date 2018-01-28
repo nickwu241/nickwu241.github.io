@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Nicholas Wu</title>
+    <meta name="description" content="Learn more about Nick!">
+    <meta name="author" content="Nicholas Wu">
+    <meta name="keywords" content="Nicholas Wu, Nick, nickwu241">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="css/poole.css" type="text/css">
     <link rel="stylesheet" href="css/hyde.css" type="text/css">
@@ -25,8 +28,8 @@
                 <img class="avatar" src="https://avatars3.githubusercontent.com/u/9021054?v=4&u=de203ee9993bc2e6533c96ef7f689888ade10d3f&s=150">
             </center>
             <h1 class="sidebar-name">Nicholas Wu</h1>
-            <p class="lead">Software Developer</p>
-            <p>A simple website to feature my projects and have some fun :)</p>
+            <p class="lead">Student & Developer</p>
+            <p>A simple website to feature some projects and have some fun :)</p>
 
             <nav class="sidebar-nav">
                 <a v-for="(item, i) in navItems"
@@ -57,7 +60,7 @@
             :tags="p.tags">
             </project>
             <h1 class="post-title">For more...</h1>
-            <p><a href="http://nickwu241.github.io/projects">Here</a> is a collection of all my projects.</p>
+            <p>Check out my <a href="https://github.com/nickwu241">Github</a> for more projects and open-source contributions!</p>
         </div>
         <div v-else-if="activeSection == 'Resume'">
             <p>Please click <a href="/resume.pdf">here</a> to view my resume if it doesn't load or display properly.</p>
@@ -66,14 +69,11 @@
                 :height="resumeHeight">
         </div>
         <div v-else-if="activeSection == 'About'">
-            <h1>Oooops...</h1>
-            <p>Hi sneaky visitors, unfortunately there's no about section yet but I am working on it.
-                Wow! I am flattered that you want to learn more about me :)</p>
-            <p>In the meantime, you can find me on social media!</p>
-            <a class="fa fa-linkedin fa-2x" href="https://linkedin.com/in/nick-wu/"></a>
-            <a class="fa fa-github fa-2x" href="https://github.com/nickwu241/"></a>
-            <a class="fa fa-instagram fa-2x" href="https://www.instagram.com/nickwu241/"></a>
-            <a class="fa fa-youtube fa-2x" href="https://www.youtube.com/user/nickwu241"></a>
+            <h1>About</h1>
+            <p>Hi sneaky visitors, I'm flattered that you want to learn more about me :)</p>
+            <P>If you can't find me hacking away at projects, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix</P>
+            <p>If you're curious about how I develop, I actively update this doc:</p>
+            <script src="https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45.js"></script>
         </div>
     </div> <!-- .content-->
 
