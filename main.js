@@ -5,13 +5,14 @@ Vue.component('project', {
         <span class="post-date">{{date}}</span>
         <div class="center">
             <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="img-inline">
+            <iframe v-for="v in videolinks" width="560" height="315" :src="v" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <p>{{description}}</p>
         <a class="button" :href="ghlink">Github</a>
         </div>
     </div>
     `,
-    props: ['title', 'description', 'date', 'imageinfo', 'ghlink', 'tags']
+    props: ['title', 'description', 'date', 'imageinfo', 'videolinks', 'ghlink', 'tags']
 })
 
 const PROJECTS = [
@@ -38,8 +39,9 @@ const PROJECTS = [
         name: 'Desktop Launcher',
         date: 'January 2017 – April 2017',
         description: 'A toy turret that can aim, take photos, and be fired by the user.',
-        imageinfo: [
-            {link: 'https://raw.githubusercontent.com/ZeyadTamimi/DesktopLauncher/master/images/thumbnail_extended.png'}
+        videolinks: [
+            'https://www.youtube.com/embed/gDMdrrUyVQY',
+            'https://www.youtube.com/embed/LGqRxaPduhk'
         ],
         ghlink: 'https://zeyadtamimi.github.io/DesktopLauncher',
         tags: []
