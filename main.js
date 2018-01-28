@@ -1,3 +1,4 @@
+// For dynamically resizing iframes: https://benmarshall.me/responsive-iframes/
 Vue.component('project', {
     template: `
     <div class="post">
@@ -5,10 +6,8 @@ Vue.component('project', {
         <span class="post-date">{{date}}</span>
         <div class="center">
             <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="img-inline">
-            <div v-for="v in videolinks"style='position: relative; width: 100%; height: 0px; padding-bottom: 60%; margin-bottom: 10px'>
-                <iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'
-                    :src="v" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
+            <div v-for="v in videolinks" class="video-container">
+                <iframe :src="v" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <p>{{description}}</p>
