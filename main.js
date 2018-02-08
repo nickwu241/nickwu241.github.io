@@ -20,7 +20,7 @@ Vue.component('project', {
 
 const PROJECTS = [
     {
-        name: 'UBC Course Scheduler Creator',
+        name: 'UBC Course Schedule Creator',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
         imageinfo: [{link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png', style: "border: 1px solid black;"}],
         date: 'April 2017 - Present',
