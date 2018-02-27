@@ -18,6 +18,14 @@ Vue.component('project', {
 
 const PROJECTS = [
     {
+        name: 'UBC Course Schedule Creator',
+        description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
+        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png'}],
+        date: 'April 2017 - Present',
+        ghlink: 'https://github.com/gbvivian/schedulecreator',
+        tags: []
+    },
+    {
         name: 'Review Me',
         description: 'Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.',
         imageinfo: [
@@ -28,14 +36,6 @@ const PROJECTS = [
         ],
         date: 'Feb 2018',
         ghlink: 'https://nickwu241.github.io/review-me',
-        tags: []
-    },
-    {
-        name: 'UBC Course Schedule Creator',
-        description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
-        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png'}],
-        date: 'April 2017 - Present',
-        ghlink: 'https://github.com/gbvivian/schedulecreator',
         tags: []
     },
     {
