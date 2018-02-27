@@ -3,16 +3,14 @@ Vue.component('project', {
     template: `
     <div class="post">
         <h1 class="post-title">{{title}}</h1>
-        <span class="post-date">{{date}}</span>
+        <p>{{description}}</p>
         <div class="center">
-            <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="img-inline">
+            <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="project-img img-inline">
             <div v-for="v in videolinks" class="video-container">
                 <iframe :src="v" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-        <p>{{description}}</p>
         <a class="button" :href="ghlink">Github</a>
-        </div>
     </div>
     `,
     props: ['title', 'description', 'date', 'imageinfo', 'videolinks', 'ghlink', 'tags']
@@ -20,9 +18,22 @@ Vue.component('project', {
 
 const PROJECTS = [
     {
+        name: 'Review Me',
+        description: 'Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.',
+        imageinfo: [
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png'},
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/issues.png'},
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png'},
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png', style: 'width: 50%;'}
+        ],
+        date: 'Feb 2018',
+        ghlink: 'https://nickwu241.github.io/review-me',
+        tags: []
+    },
+    {
         name: 'UBC Course Schedule Creator',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
-        imageinfo: [{link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png', style: "border: 1px solid black;"}],
+        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png'}],
         date: 'April 2017 - Present',
         ghlink: 'https://github.com/gbvivian/schedulecreator',
         tags: []
@@ -32,8 +43,8 @@ const PROJECTS = [
         date: 'March 2017 - May 2017',
         description: 'An Android application to solve “Where should we eat?” situations by randomly selecting a nearby restaurant on phone shake.',
         imageinfo: [
-            {link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png', style: "max-width: 45%; margin-right: 2%;"},
-            {link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png', style: "max-width: 45%;"}
+            { link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png', style: "max-width: 45%; margin-right: 2%;" },
+            { link: 'https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png', style: "max-width: 45%;" }
         ],
         ghlink: 'https://github.com/nickwu241/FoodShake',
         tags: []
@@ -54,8 +65,8 @@ const PROJECTS = [
         date: 'December 2015 - September 2016',
         description: 'A desktop application for playing Blackjack. Implemented in Java using JavaFX for GUI.',
         imageinfo: [
-            {link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_actions.png'},
-            {link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_win.png'}
+            { link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_actions.png' },
+            { link: 'https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_win.png' }
         ],
         ghlink: 'https://github.com/nickwu241/blackjack-java',
         tags: []
@@ -63,9 +74,9 @@ const PROJECTS = [
 ];
 
 const NAV_ITEMS = [
-    {name: "Projects", isActive : true},
-    {name: "Resume", isActive : false},
-    {name: "About", isActive : false}
+    { name: "Projects", isActive: true },
+    { name: "Resume", isActive: false },
+    { name: "About", isActive: false }
 ];
 
 var app = new Vue({
@@ -77,12 +88,12 @@ var app = new Vue({
         resumeHeight: 0
     },
     computed: {
-        activeSection: function() {
+        activeSection: function () {
             return this.navItems[this.lastActiveNavIndex].name;
         }
     },
     methods: {
-        navItemClick: function(item, itemIndex) {
+        navItemClick: function (item, itemIndex) {
             // deactive last item and activate our new one
             this.navItems[this.lastActiveNavIndex].isActive = false;
             this.lastActiveNavIndex = itemIndex;

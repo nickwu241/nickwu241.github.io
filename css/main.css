@@ -12,8 +12,9 @@
     text-align: center;
 }
 
-.img-inline {
+.project-img {
     display: inline-block;
+    border: 1px solid black;
 }
 
 .avatar {
