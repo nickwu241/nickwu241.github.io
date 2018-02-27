@@ -2,15 +2,17 @@
 Vue.component('project', {
     template: `
     <div class="post">
-        <h1 class="post-title">{{title}}</h1>
+        <h1 class="post-title">{{title}} </h1>
         <p>{{description}}</p>
+        <a class="fa fa-github" :href="ghlink" style="color: #fff;"></a>
+        <br/>
+        <br/>
         <div class="center">
             <img v-for="i in imageinfo" :src="i.link" :style="i.style" class="project-img img-inline">
             <div v-for="v in videolinks" class="video-container">
                 <iframe :src="v" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-        <a class="button" :href="ghlink">Github</a>
     </div>
     `,
     props: ['title', 'description', 'date', 'imageinfo', 'videolinks', 'ghlink', 'tags']
@@ -20,7 +22,7 @@ const PROJECTS = [
     {
         name: 'UBC Course Schedule Creator',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
-        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png'}],
+        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png' }],
         date: 'April 2017 - Present',
         ghlink: 'https://github.com/gbvivian/schedulecreator',
         tags: []
@@ -29,10 +31,10 @@ const PROJECTS = [
         name: 'Review Me',
         description: 'Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.',
         imageinfo: [
-            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png'},
-            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/issues.png'},
-            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png'},
-            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png', style: 'width: 50%;'}
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png' },
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/issues.png' },
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png' },
+            { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png', style: 'width: 50%;' }
         ],
         date: 'Feb 2018',
         ghlink: 'https://nickwu241.github.io/review-me',
