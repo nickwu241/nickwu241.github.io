@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,6 +21,7 @@
     <!-- Vue for development -->
     <!-- <script src="https://unpkg.com/vue"></script> -->
 </head>
+
 <body>
 <div id="app">
     <div class="sidebar">
@@ -52,20 +54,22 @@
     <div class="content container" id="content-container">
         <div v-if="activeSection == 'Projects'" class="posts">
             <project v-for="p in projects"
-            :title="p.name"
-            :description="p.description"
-            :date="p.date"
-            :ghlink="p.ghlink"
-            :imageinfo="p.imageinfo"
-            :videolinks="p.videolinks"
-            :tags="p.tags">
-            </project>
-            <h1 class="post-title">More!</h1>
-            <p>Check out my <a href="https://github.com/nickwu241">Github</a> for more projects and open-source contributions!</p>
+                :title="p.name"
+                :description="p.description"
+                :date="p.date"
+                :ghlink="p.ghlink"
+                :imageinfo="p.imageinfo"
+                :videolinks="p.videolinks"
+                :tags="p.tags" />
+            <div class="post">
+                <h1 class="post-title">More!</h1>
+                <p>Check out my <a href="https://github.com/nickwu241">Github</a> for more projects and open-source contributions!</p>
+            </div>
         </div>
         <div v-else-if="activeSection == 'Resume'">
             <p>Please click <a href="/resume.pdf">here</a> to view my resume if it doesn't load or display properly.</p>
-            <embed type="application/pdf" src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
+            <embed type="application/pdf"
+                src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
                 width="100%"
                 :height="resumeHeight">
         </div>
@@ -81,4 +85,5 @@
 </div> <!-- #app-->
 <script src="main.js"></script>
 </body>
+
 </html>

@@ -4,7 +4,8 @@ Vue.component('project', {
     <div class="post">
         <h1 class="post-title">{{title}} </h1>
         <p>{{description}}</p>
-        <a class="fa fa-github" :href="ghlink" style="color: #fff;"></a>
+        <a class="fa fa-github" :href="ghlink"></a>
+        <a v-if="videolinks" class="fa fa-youtube" :href="videolinks[0]"></a>
         <br/>
         <br/>
         <div class="center">
@@ -21,14 +22,18 @@ Vue.component('project', {
 const PROJECTS = [
     {
         name: 'UBC Course Schedule Creator',
-        description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
-        imageinfo: [{ link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png' }],
         date: 'April 2017 - Present',
+        description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
+        imageinfo: [
+            { link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png' }
+        ],
+        demolink: 'https://gbvivian.github.io/schedulecreator',
         ghlink: 'https://github.com/gbvivian/schedulecreator',
         tags: []
     },
     {
         name: 'Review Me',
+        date: 'February 2018',
         description: 'Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.',
         imageinfo: [
             { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png' },
@@ -36,7 +41,6 @@ const PROJECTS = [
             { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png' },
             { link: 'https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png', style: 'width: 50%;' }
         ],
-        date: 'Feb 2018',
         ghlink: 'https://nickwu241.github.io/review-me',
         tags: []
     },
