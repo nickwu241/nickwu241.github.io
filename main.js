@@ -4,6 +4,7 @@ Vue.component('project', {
     <div class="post">
         <h1 class="post-title">{{title}} </h1>
         <p>{{description}}</p>
+        <a v-if="demolink" class="fa fa-link" :href="demolink"></a>
         <a class="fa fa-github" :href="ghlink"></a>
         <a v-if="videolinks" class="fa fa-youtube" :href="videolinks[0]"></a>
         <br/>
@@ -16,7 +17,7 @@ Vue.component('project', {
         </div>
     </div>
     `,
-    props: ['title', 'description', 'date', 'imageinfo', 'videolinks', 'ghlink', 'tags']
+    props: ['title', 'description', 'date', 'imageinfo', 'demolink', 'ghlink', 'videolinks', 'tags']
 })
 
 const PROJECTS = [
@@ -25,10 +26,10 @@ const PROJECTS = [
         date: 'April 2017 - Present',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
         imageinfo: [
-            { link: 'https://raw.githubusercontent.com/gbvivian/schedulecreator/master/demo-images/two.png' }
+            { link: 'https://raw.githubusercontent.com/smart-cs/scheduler/master/demo-images/two.png' }
         ],
-        demolink: 'https://gbvivian.github.io/schedulecreator',
-        ghlink: 'https://github.com/gbvivian/schedulecreator',
+        demolink: 'https://smart-cs.github.io/scheduler',
+        ghlink: 'https://github.com/smart-cs/scheduler',
         tags: []
     },
     {

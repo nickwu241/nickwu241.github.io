@@ -78,6 +78,11 @@
     color: white;
 }
 
+.fa-link {
+    background-color: #008CBA;
+    color: white;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
