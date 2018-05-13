@@ -26,7 +26,8 @@ const PROJECTS = [
         date: 'April 2017 - Present',
         description: 'A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.',
         imageinfo: [
-            { link: 'https://raw.githubusercontent.com/smart-cs/scheduler/master/demo-images/two.png' }
+            { link: 'https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/one.png' },
+            { link: 'https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/demo.gif' }
         ],
         demolink: 'https://smart-cs.github.io/scheduler',
         ghlink: 'https://github.com/smart-cs/scheduler',
