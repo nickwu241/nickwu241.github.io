@@ -1,3 +1,18 @@
-# [Nick's Personal Website](http://nickwu241.github.io/)
+# nick-website
 
-Still a work in progress!
+> Nick's Personal Website
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

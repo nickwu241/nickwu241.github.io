@@ -1,0 +1,82 @@
+[
+  {
+    "name": "UBC Course Schedule Creator",
+    "subtitle": "Personal Project",
+    "date": "April 2017 - Present",
+    "description":
+      "A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/one.png",
+      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/demo.gif"
+    ],
+    "demolink": "https://smart-cs.github.io/scheduler",
+    "ghlink": "https://github.com/smart-cs/scheduler"
+  },
+  {
+    "name": "Spotty",
+    "subtitle": "1st Place @ Ryerson University Hacks 2018",
+    "date": "May 2018",
+    "description":
+      "Spotty advertises your unused parking spaces to drivers who are looking for parking. Using IoT, Spotty uses cameras and sensors to provide automated security, and the status of your parking space ensuring that your property is safe.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/raspberry-pi-flow.png",
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/orange-pi-flow.png",
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/raspberry-pi-dashboard.png",
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/mobile-login.png",
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/mobile-browse.png",
+      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/mobile-select.png"
+    ],
+    "ghlink": "https://nickwu241.github.io/spotty"
+  },
+  {
+    "name": "Review Me",
+    "subtitle": "Winner of AWS Prize @ Hack the Valley 2",
+    "date": "February 2018",
+    "description":
+      "Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png",
+      "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/issues.png",
+      "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png",
+      "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png"
+    ],
+    "ghlink": "https://nickwu241.github.io/review-me"
+  },
+  {
+    "name": "Food Shake",
+    "subtitle": "Personal Project",
+    "date": "March 2017 - May 2017",
+    "description":
+      "An Android application to solve “Where should we eat?” situations by randomly selecting a nearby restaurant on phone shake.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png",
+      "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png"
+    ],
+    "ghlink": "https://github.com/nickwu241/FoodShake"
+  },
+  {
+    "name": "Desktop Launcher",
+    "subtitle": "Top Group Project in CPEN 391",
+    "date": "January 2017 – April 2017",
+    "description":
+      "A toy turret that can aim, take photos, and be fired by the user.",
+    "imgsrc": ["http://img.youtube.com/vi/gDMdrrUyVQY/0.jpg"],
+    "videosrc": [
+      "https://www.youtube.com/embed/gDMdrrUyVQY",
+      "https://www.youtube.com/embed/LGqRxaPduhk"
+    ],
+    "ghlink": "https://zeyadtamimi.github.io/DesktopLauncher"
+  },
+  {
+    "name": "Blackjack",
+    "subtitle": "Personal Project",
+    "date": "December 2015 - September 2016",
+    "description":
+      "A desktop application for playing Blackjack. Implemented in Java using JavaFX for GUI.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_actions.png",
+      "https://raw.githubusercontent.com/nickwu241/blackjack-java/master/demo/demo_win.png"
+    ],
+    "ghlink": "https://github.com/nickwu241/blackjack-java"
+  }
+]
