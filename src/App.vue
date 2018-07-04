@@ -39,11 +39,11 @@
 
       <!-- Projects -->
       <b-row v-if="activeItemTitle === 'Projects'" align-content="center">
-        <b-col v-for="p in projects" :key="p.title" sm="12" md="6" lg="4" class="px-0 px-md-2 mb-md-4">
+        <b-col v-for="p in projects" :key="p.title" sm="12" md="6" lg="4" class="px-0 px-md-2 mb-2 mb-md-4">
           <b-card :title="p.name" :sub-title="p.subtitle" :img-src="p.imgsrc[0]" :img-alt="p.name" img-top>
             <p class="card-text">{{ p.description }}</p>
             <b-button v-if="p.demolink" :href="p.demolink" variant="success">Try It</b-button>
-            <b-button v-if="p.videosrc" :href="p.videosrc[0]" variant="danger">View on YouTube</b-button>
+            <b-button v-if="p.videosrc" :href="p.videosrc[0]" variant="danger">Watch on YouTube</b-button>
             <b-button :href="p.ghlink" variant="primary">View on GitHub</b-button>
           </b-card>
         </b-col>
@@ -53,7 +53,7 @@
         <b-col xl="6" class="pt-2 section-content">
           <p> Click
             <a href="../resume.pdf">here</a>
-            to view my resume if it doesn't load or display properly.
+            to view my resume if the PDF plugin is not supported by your device.
           </p>
           <embed src="../resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit" type="application/pdf" width="100%" :height="resumeHeight">
         </b-col>
