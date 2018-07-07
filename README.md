@@ -1,10 +1,10 @@
-# nick-website
+# Nick's Personal Website
 
-> Nick's Personal Website
+Responsive website featuring my projects, blog, and resume using Vue and Bootstrap.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
