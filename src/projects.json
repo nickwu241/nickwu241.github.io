@@ -1,18 +1,5 @@
 [
   {
-    "name": "UBC Course Schedule Creator",
-    "subtitle": "Personal Project",
-    "date": "April 2017 - Present",
-    "description":
-      "A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.",
-    "imgsrc": [
-      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/one.png",
-      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/demo.gif"
-    ],
-    "demolink": "https://smart-cs.github.io/scheduler",
-    "ghlink": "https://github.com/smart-cs/scheduler"
-  },
-  {
     "name": "Spotty",
     "subtitle": "1st Place @ Ryerson University Hacks 2018",
     "date": "May 2018",
@@ -41,6 +28,19 @@
       "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png"
     ],
     "ghlink": "https://nickwu241.github.io/review-me"
+  },
+  {
+    "name": "UBC Course Schedule Creator",
+    "subtitle": "Personal Project",
+    "date": "April 2017 - Present",
+    "description":
+      "A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/one.png",
+      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/demo.gif"
+    ],
+    "demolink": "https://smart-cs.github.io/scheduler",
+    "ghlink": "https://github.com/smart-cs/scheduler"
   },
   {
     "name": "Food Shake",
