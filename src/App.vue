@@ -5,13 +5,13 @@
       <b-navbar toggleable="md" type="dark" variant="dark" sticky class="header-container">
         <b-navbar-toggle target="nav_collapse" />
 
-        <b-navbar-brand href="#" @click="navClicked({title: 'Projects'})">
+        <b-navbar-brand href="#" @click="navToSection('Projects')">
           <img class="rounded-circle" src="https://avatars3.githubusercontent.com/u/9021054?v=4&u=de203ee9993bc2e6533c96ef7f689888ade10d3f&s=45" /> Nicholas Wu
         </b-navbar-brand>
 
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
-            <b-nav-item v-for="item in navItems" :key="item.title" @click="navClicked(item)" :class="{ active : item.isActive }">
+            <b-nav-item v-for="item in navItems" :key="item.title" @click="navToSection(item.title)" :class="{ active : item.isActive }">
               {{item.title}}
             </b-nav-item>
           </b-navbar-nav>
@@ -116,11 +116,11 @@ export default {
     }
   },
   methods: {
-    navClicked(clickedItem) {
+    navToSection(sectionTitle) {
       this.navItems.forEach(item => {
-        item.isActive = clickedItem.title === item.title
+        item.isActive = sectionTitle === item.title
       })
-      this.activeItemTitle = clickedItem.title
+      this.activeItemTitle = sectionTitle
       this.resumeHeight = screen.width < 576 ? 460 : screen.height * 0.75
     }
   }
