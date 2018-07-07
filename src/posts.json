@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Embed a Gist statically in Vue",
+    "summary":
+      "Tutorial on how to embed a Gist without using Javascript for Vue Applications with example.",
+    "link":
+      "https://medium.com/@nickwu241/embed-a-gist-statically-in-vue-4df59b56b29",
+    "source": "Medium",
+    "duration": "1 min",
+    "date": "07/06/2018"
+  },
+  {
+    "title": "Atlantis + Slack Integration, an Open Source Contribution",
+    "summary":
+      "My experience on contributing to Atlantis, a standalone application that listens for Terraform pull request events via webhooks.",
+    "link": "http://code.hootsuite.com/atlantis-slack-integration/",
+    "source": "Hootsuite Code Blog",
+    "duration": "5 mins",
+    "date": "12/22/2017"
+  }
+]
