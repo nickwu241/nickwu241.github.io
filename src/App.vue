@@ -16,10 +16,10 @@
             </b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav style="flex-direction: row;">
-            <b-nav-item href="https://linkedin.com/in/nick-wu/">
+            <b-nav-item href="https://linkedin.com/in/nick-wu">
               <span class="fa fa-linkedin" />
             </b-nav-item>
-            <b-nav-item href="https://linkedin.com/in/nick-wu/">
+            <b-nav-item href="https://github.com/nickwu241">
               <span class="fa fa-github" />
             </b-nav-item>
             <b-nav-item href="https://medium.com/@nickwu241">
