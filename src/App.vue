@@ -121,7 +121,7 @@ export default {
         item.isActive = sectionTitle === item.title
       })
       this.activeItemTitle = sectionTitle
-      this.resumeHeight = screen.width < 576 ? 460 : screen.height * 0.75
+      this.resumeHeight = screen.height
     }
   }
 }
