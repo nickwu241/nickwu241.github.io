@@ -5,15 +5,12 @@
       <b-navbar toggleable="md" type="dark" variant="dark" sticky class="header-container">
         <b-navbar-toggle target="nav_collapse" />
 
-        <b-navbar-brand href="#" @click="navToSection('Projects')">
-          <img class="rounded-circle" src="https://avatars3.githubusercontent.com/u/9021054?v=4&u=de203ee9993bc2e6533c96ef7f689888ade10d3f&s=45" /> Nicholas Wu
-        </b-navbar-brand>
+        <b-navbar-brand href="#" @click="navToSection('Projects')">Nicholas Wu</b-navbar-brand>
 
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
-            <b-nav-item v-for="item in navItems" :key="item.title" @click="navToSection(item.title)" :class="{ active : item.isActive }">
-              {{item.title}}
-            </b-nav-item>
+            <b-nav-item v-for="item in navItems" :key="item.title" @click="navToSection(item.title)" :class="{ active : item.isActive }"> {{item.title}}</b-nav-item>
+            <b-nav-item href="../resume.pdf">Resume</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav style="flex-direction: row;">
             <b-nav-item href="https://linkedin.com/in/nick-wu">
@@ -67,21 +64,18 @@
             </b-list-group>
           </b-col>
         </b-row>
-        <!-- Resume -->
-        <b-row v-else-if="activeItemTitle === 'Resume'">
-          <b-col class="pt-2 section-content">
-            <p> Click
-              <a href="../resume.pdf">here</a>
-              to view my resume if the PDF plugin is not supported by your device.
-            </p>
-            <embed src="../resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit" type="application/pdf" width="100%" :height="resumeHeight">
-          </b-col>
-        </b-row>
         <!-- About -->
         <b-row v-else-if="activeItemTitle === 'About'">
           <b-col class="pt-2 section-content">
-            <p>Hi sneaky visitors, I'm flattered that you want to learn more about me! :)</p>
-            <P>If you can't find me hacking away at projects, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix.</P>
+            <b-row>
+              <b-col sm="4">
+                <b-img fluid rounded class="mb-2" src="./src/assets/nick.jpg" alt="Nick" />
+              </b-col>
+              <b-col sm="8">
+                <p>Hi sneaky visitors, I'm flattered that you want to learn more about me! :)</p>
+                <P>If you can't find me hacking away at projects, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix.</P>
+              </b-col>
+            </b-row>
             <p>Happy Birthday! Here's some development tips and tricks for you!</p>
             <Gist />
           </b-col>
@@ -104,11 +98,9 @@ export default {
   data() {
     return {
       activeItemTitle: 'Projects',
-      resumeHeight: 0,
       navItems: [
         { title: 'Projects', isActive: true },
         { title: 'Blog', isActive: false },
-        { title: 'Resume', isActive: false },
         { title: 'About', isActive: false }
       ],
       posts,
@@ -121,7 +113,6 @@ export default {
         item.isActive = sectionTitle === item.title
       })
       this.activeItemTitle = sectionTitle
-      this.resumeHeight = screen.height
     }
   }
 }
@@ -199,7 +190,7 @@ export default {
 }
 
 .fa-instagram {
-  background-color: #9a5d00;
+  background-color: #bc2a8d;
   color: white;
 }
 

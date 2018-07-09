@@ -4,8 +4,42 @@
       <div class="gist-data">
         <div class="js-gist-file-update-container js-task-list-container file-box">
           <div id="file-development-tips-and-tricks-md" class="file">
+
             <div id="readme" class="readme blob instapaper_body">
               <article class="markdown-body entry-content" itemprop="text">
+                <ul>
+                  <li>
+                    <a href="#setting-up-a-new-development-machine">Setting up a new development machine</a>
+                  </li>
+                  <li>
+                    <a href="#workflow">Workflow</a>
+                    <ul>
+                      <li>
+                        <a href="#shortcuts">Shortcuts</a>
+                      </li>
+                      <li>
+                        <a href="#cli-essentials">CLI Essentials</a>
+                      </li>
+                      <li>
+                        <a href="#git">Git</a>
+                      </li>
+                      <li>
+                        <a href="#other">Other</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#bookmarks">Bookmarks</a>
+                    <ul>
+                      <li>
+                        <a href="#machine-setup">Machine Setup</a>
+                      </li>
+                      <li>
+                        <a href="#development">Development</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
                 <h2>
                   <a id="user-content-setting-up-a-new-development-machine" class="anchor" aria-hidden="true" href="#setting-up-a-new-development-machine">
                     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -142,7 +176,8 @@
                     <p>&lt;code&gt;</p>
                     <p>```: wrap logs or codeblocks with a specified language, e.g.</p>
                     <div class="highlight highlight-source-python">
-                      <pre><span class="pl-k">def</span> <span class="pl-en">hello</span>():    <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">'</span>Hello Nick<span class="pl-pds">'</span></span>)</pre>
+                      <pre><span class="pl-k">def</span> <span class="pl-en">hello</span>():
+    <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">'</span>Hello Nick<span class="pl-pds">'</span></span>)</pre>
                     </div>
                   </li>
                   <li>
@@ -348,12 +383,15 @@
                 </ul>
               </article>
             </div>
+
           </div>
         </div>
+
       </div>
       <div class="gist-meta">
-        <a href="https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45/raw/0ac303328d4001c6f34bf4a8704f3a9a028a8f26/development-tips-and-tricks.md" style="float:right">view raw</a>
-        <a href="https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45#file-development-tips-and-tricks-md">development-tips-and-tricks.md</a> hosted with &#10084; by
+        <a href="https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45/raw/96f5f7467e5aeb50d6b9cc7b9ac683687a6c3280/development-tips-and-tricks.md" style="float:right">view raw</a>
+        <a href="https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45#file-development-tips-and-tricks-md">development-tips-and-tricks.md</a>
+        hosted with &#10084; by
         <a href="https://github.com">GitHub</a>
       </div>
     </div>
