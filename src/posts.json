@@ -1,5 +1,13 @@
 [
   {
+    "title": "Web Scraping with Python — Part 1",
+    "summary": "Tutorial on web scraping using Python (BeautifulSoup) with an example.",
+    "link": "https://medium.com/@nickwu241/web-scraping-with-python-part-1-da26397366e1",
+    "source": "Medium",
+    "duration": "3 mins",
+    "date": "08/08/2018"
+  },
+  {
     "title": "Embed a Gist statically in Vue",
     "summary":
       "Tutorial on how to embed a Gist without using Javascript for Vue Applications with example.",
