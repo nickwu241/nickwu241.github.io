@@ -5,7 +5,7 @@
       <b-navbar toggleable="md" type="dark" variant="dark" sticky class="header-container">
         <b-navbar-toggle target="nav_collapse" />
 
-        <b-navbar-brand href="#" @click="navToSection('Projects')">Nicholas Wu</b-navbar-brand>
+        <b-navbar-brand href="#" @click="navToSection('Portfolio')">Nicholas Wu</b-navbar-brand>
 
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
@@ -36,8 +36,16 @@
     <!-- CONTENT -->
     <b-container fluid class="bg-lightblue p-md-3">
       <div class="content-container">
-        <!-- Projects -->
-        <b-row v-if="activeItemTitle === 'Projects'" align-content="center">
+        <!-- Portfolio -->
+        <b-row v-if="activeItemTitle === 'Portfolio'" align-content="center">
+          <b-col sm="3" class="text-center my-2">
+            <b-img fluid rounded="circle" src="./src/assets/nick-face.jpg" alt="Nick" width="217.5" height="217.5"/>
+          </b-col>
+          <b-col sm="9" class="my-2">
+            <h3>👋 Hi! I'm Nick— a Software Engineer interested in Web, Mobile, and DevOps.</h3>
+            <p>If you can't find me hacking away, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix.</p>
+            <p>See some of my work below & contact me if you're looking for a developer! :)</p>
+          </b-col>
           <b-col v-for="p in projects" :key="p.title" sm="12" md="6" class="px-0 px-md-2 mb-2 mb-md-4">
             <b-card :title="p.name" :sub-title="p.subtitle" :img-src="p.imgsrc[0]" :img-alt="p.name" img-top>
               <p class="card-text">{{ p.description }}</p>
@@ -56,28 +64,10 @@
                   <h5 class="mb-1">{{post.title}}</h5>
                   <small class="text-muted">{{post.date}}</small>
                 </div>
-                <p class="mb-1">
-                  {{post.summary}}
-                </p>
+                <p class="mb-1">{{post.summary}}</p>
                 <small class="text_muted">{{post.source}} • {{post.duration}} read</small>
               </b-list-group-item>
             </b-list-group>
-          </b-col>
-        </b-row>
-        <!-- About -->
-        <b-row v-else-if="activeItemTitle === 'About'">
-          <b-col class="pt-2 section-content">
-            <b-row>
-              <b-col sm="4">
-                <b-img fluid rounded class="mb-2" src="./src/assets/nick.jpg" alt="Nick" />
-              </b-col>
-              <b-col sm="8">
-                <p>Hi sneaky visitors, I'm flattered that you want to learn more about me! :)</p>
-                <P>If you can't find me hacking away at projects, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix.</P>
-              </b-col>
-            </b-row>
-            <p>Happy Birthday! Here's some development tips and tricks for you!</p>
-            <Gist />
           </b-col>
         </b-row>
       </div>
@@ -86,22 +76,17 @@
 </template>
 
 <script>
-import Gist from './Gist.vue'
 import posts from './posts.json'
 import projects from './projects.json'
 
 export default {
   name: 'app',
-  components: {
-    Gist
-  },
   data() {
     return {
-      activeItemTitle: 'Projects',
+      activeItemTitle: 'Portfolio',
       navItems: [
-        { title: 'Projects', isActive: true },
-        { title: 'Blog', isActive: false },
-        { title: 'About', isActive: false }
+        { title: 'Portfolio', isActive: true },
+        { title: 'Blog', isActive: false }
       ],
       posts,
       projects
@@ -156,6 +141,7 @@ export default {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -176,26 +162,21 @@ export default {
 
 .fa-linkedin {
   background-color: #007bb5;
-  color: white;
 }
 
 .fa-github {
   background-color: black;
-  color: white;
 }
 
 .fa-medium {
   background-color: green;
-  color: white;
 }
 
 .fa-instagram {
   background-color: #bc2a8d;
-  color: white;
 }
 
 .fa-youtube {
   background-color: #cc181e;
-  color: white;
 }
 </style>
