@@ -43,7 +43,7 @@
           </b-col>
           <b-col sm="9" class="my-2">
             <h3>👋 Hi! I'm Nick— a Software Engineer interested in Web, Mobile, and DevOps.</h3>
-            <p>If you can't find me hacking away, then I'll most likely be playing soccer, guitar, board games, video games, or watching Netflix.</p>
+            <p>If you can't find me hacking away at projects, then I'll be playing soccer, guitar, board games, video games, eating yummy food, exploring the world, or watching Netflix.</p>
             <p>See some of my work below & contact me if you're looking for a developer! :)</p>
           </b-col>
           <b-col v-for="p in projects" :key="p.title" sm="12" md="6" class="px-0 px-md-2 mb-2 mb-md-4">
