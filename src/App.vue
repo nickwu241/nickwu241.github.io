@@ -39,12 +39,15 @@
         <!-- Portfolio -->
         <b-row v-if="activeItemTitle === 'Portfolio'" align-content="center">
           <b-col sm="3" class="text-center my-2">
-            <b-img fluid rounded="circle" src="./src/assets/nick-face.jpg" alt="Nick" width="217.5" height="217.5"/>
+            <b-img fluid rounded="circle" src="./src/assets/nick.jpg" alt="Nick" width="217.5" height="217.5"/>
           </b-col>
           <b-col sm="9" class="my-2">
             <h3>👋 Hi! I'm Nick— a Software Engineer interested in Web, Mobile, and DevOps.</h3>
-            <p>If you can't find me hacking away at projects, then I'll be playing soccer, guitar, board games, video games, eating yummy food, exploring the world, or watching Netflix.</p>
-            <p>See some of my work below & contact me if you're looking for a developer! :)</p>
+            <p>
+              <strong>Looking for a Developer?</strong> See my <b-link href="resume.pdf">resume</b-link> and projects below,
+              then contact me at <b-link href="mailto:nickwu241@gmail.com">nickwu241@gmail.com</b-link> if you're interested!
+            </p>
+            <p>If you can't find me hacking away at projects, then I'll most likely be playing soccer ⚽, guitar 🎸, board games 🎲, video games 🎮, eating yummy food 🍛, exploring the world ✈️, or watching Netflix 📺.</p>
           </b-col>
           <b-col v-for="p in projects" :key="p.title" sm="12" md="6" class="px-0 px-md-2 mb-2 mb-md-4">
             <b-card :title="p.name" :sub-title="p.subtitle" :img-src="p.imgsrc[0]" :img-alt="p.name" img-top>
@@ -76,36 +79,36 @@
 </template>
 
 <script>
-import posts from './posts.json'
-import projects from './projects.json'
+import posts from "./posts.json";
+import projects from "./projects.json";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
-      activeItemTitle: 'Portfolio',
+      activeItemTitle: "Portfolio",
       navItems: [
-        { title: 'Portfolio', isActive: true },
-        { title: 'Blog', isActive: false }
+        { title: "Portfolio", isActive: true },
+        { title: "Blog", isActive: false }
       ],
       posts,
       projects
-    }
+    };
   },
   methods: {
     navToSection(sectionTitle) {
       this.navItems.forEach(item => {
-        item.isActive = sectionTitle === item.title
-      })
-      this.activeItemTitle = sectionTitle
+        item.isActive = sectionTitle === item.title;
+      });
+      this.activeItemTitle = sectionTitle;
     }
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
