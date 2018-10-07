@@ -1,6 +1,6 @@
 # Nick's Personal Website
 
-Responsive website featuring my projects, blog, and resume using Vue and Bootstrap.
+Responsive website featuring my projects, blog, and resume using Vue and Bootstrap. See it [here](https://nickwu241.github.io)!
 
 ## Build Setup
 
