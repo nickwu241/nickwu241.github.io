@@ -38,14 +38,14 @@
       <div class="content-container">
         <!-- Portfolio -->
         <b-row v-if="activeItemTitle === 'Portfolio'" align-content="center">
-          <b-col sm="3" class="text-center my-2">
-            <b-img fluid rounded="circle" src="./src/assets/nick.jpg" alt="Nick" width="217.5" height="217.5"/>
+          <b-col sm="4" class="text-center my-2">
+            <b-img fluid rounded="circle" src="./src/assets/nick.jpg" alt="Nick" width="250" height="250"/>
           </b-col>
-          <b-col sm="9" class="my-2">
-            <h3>👋 Hi! I'm Nick— a Software Engineer interested in Web, Mobile, and DevOps.</h3>
+          <b-col sm="8" class="my-2">
+            <h1>👋 Hi, I'm Nick!</h1>
             <p>
-              <strong>Looking for a Developer?</strong> See my <b-link href="resume.pdf">resume</b-link> and projects below,
-              then contact me at <b-link href="mailto:nickwu241@gmail.com">nickwu241@gmail.com</b-link> if you're interested!
+              <strong>Looking for a Developer?</strong> Check out my <b-link href="resume.pdf">resume</b-link> & projects below.
+              Please contact me at <b-link href="mailto:nickwu241@gmail.com">nickwu241@gmail.com</b-link> if interested!
             </p>
             <p>If you can't find me hacking away at projects, then I'll most likely be playing soccer ⚽, guitar 🎸, board games 🎲, video games 🎮, eating yummy food 🍛, exploring the world ✈️, or watching Netflix 📺.</p>
           </b-col>
@@ -117,7 +117,7 @@ export default {
 
 .header-container,
 .content-container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
