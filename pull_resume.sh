@@ -6,7 +6,7 @@ if [[ $# -ne 1 ]]; then
   exit 1
 fi
 
-RESUME_URL='https://www.dropbox.com/s/2t1drxvaavmesai/resume.pdf'
+RESUME_URL='https://www.dropbox.com/s/efojf141z0jas61/resume.pdf'
 curl ${RESUME_URL} -L > resume.pdf
 git add resume.pdf
 git commit -m "Resume: $1"
