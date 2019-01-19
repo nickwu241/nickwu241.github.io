@@ -16,6 +16,29 @@
     "ghlink": "https://nickwu241.github.io/spotty"
   },
   {
+    "name": "Miru",
+    "subtitle": "2nd Place @ Hack Washington 2018",
+    "date": "January 2019",
+    "description":
+      "Miru makes discovering new places and seeing the world easier for the visually impaired. All the functionality in Miru is activated using voice, and the feedback is also in audio-form, which means it’s super accessible for the visually impaired.",
+    "imgsrc": [
+      "src/assets/miru.png"
+    ],
+    "hackerearthlink": "https://hackwashington.hackerearth.com/sprints/hack-washington-2019/dashboard/caa7112/submission/"
+  },
+  {
+    "name": "Alexa Assignment Deadlines",
+    "subtitle": "2nd Place @ UBC Canvas Hackathon 2018",
+    "date": "October 2018",
+    "description":
+      "An Alexa skill to tell you your assignment deadlines, just say \"open assignment deadlines\".",
+    "imgsrc": [
+      "https://raw.githubusercontent.com/nickwu241/alexa-assignment-deadlines/master/splashscreen.jpg",
+      "https://raw.githubusercontent.com/nickwu241/alexa-assignment-deadlines/master/websettings.png"
+    ],
+    "ghlink": "https://github.com/nickwu241/alexa-assignment-deadlines"
+  },
+  {
     "name": "Review Me",
     "subtitle": "Winner of AWS Prize @ Hack the Valley 2",
     "date": "February 2018",
@@ -49,6 +72,7 @@
     "description":
       "An Android application to solve “Where should we eat?” situations by randomly selecting a nearby restaurant on phone shake.",
     "imgsrc": [
+      "src/assets/foodshake.png",
       "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png",
       "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png"
     ],

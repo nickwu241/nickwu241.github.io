@@ -57,7 +57,8 @@
               <p class="card-text">{{ p.description }}</p>
               <b-button v-if="p.demolink" :href="p.demolink" variant="success">Try It</b-button>
               <b-button v-if="p.videosrc" :href="p.videosrc[0]" variant="danger">Watch on YouTube</b-button>
-              <b-button :href="p.ghlink" variant="primary">View on GitHub</b-button>
+              <b-button v-if="p.ghlink" :href="p.ghlink" variant="primary">View on GitHub</b-button>
+              <b-button v-if="p.hackerearthlink" :href="p.hackerearthlink" variant="primary">View on Hackerearth</b-button>
             </b-card>
           </b-col>
         </b-row>
@@ -137,7 +138,7 @@ export default {
 
 .card-img-top {
   width: 100%;
-  height: 40vw;
+  /* height: 40vw; */
   object-fit: contain;
 }
 
