@@ -1,5 +1,13 @@
 [
   {
+    "title": "My Internship at Shopify ❤️",
+    "summary": "Sharing my experience, projects worked on, and tips for internship applications!",
+    "link": "https://medium.com/@nickwu241/my-internship-at-shopify-%EF%B8%8F-535c2e4a6e81",
+    "source": "Medium",
+    "duration": "6 mins",
+    "date": "01/17/2019"
+  },
+  {
     "title": "Web Scraping with Python — Part 1",
     "summary": "Tutorial on web scraping using Python (BeautifulSoup) with an example.",
     "link": "https://medium.com/@nickwu241/web-scraping-with-python-part-1-da26397366e1",
@@ -27,7 +35,7 @@
     "date": "12/22/2017"
   },
   {
-    "title": "My Co-op Experience at Hootsuite",
+    "title": "My Internship at Hootsuite",
     "summary": "Sharing my contributions and experience!",
     "link": "http://code.hootsuite.com/co-ops/nicholas-wu/",
     "source": "Hootsuite Code Blog",
