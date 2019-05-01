@@ -14,19 +14,19 @@
           </b-navbar-nav>
           <b-navbar-nav style="flex-direction: row;">
             <b-nav-item href="https://linkedin.com/in/nick-wu" target="_blank">
-              <span class="fa fa-linkedin" />
+              <span class="fa fa-round fa-linkedin fa-linkedin-bg" />
             </b-nav-item>
             <b-nav-item href="https://github.com/nickwu241" target="_blank">
-              <span class="fa fa-github" />
+              <span class="fa fa-round fa-github fa-github-bg" />
             </b-nav-item>
             <b-nav-item href="https://medium.com/@nickwu241" target="_blank">
-              <span class="fa fa-medium" />
+              <span class="fa fa-round fa-medium fa-medium-bg" />
             </b-nav-item>
             <b-nav-item href="https://www.instagram.com/nickwu241" target="_blank">
-              <span class="fa fa-instagram" />
+              <span class="fa fa-round fa-instagram fa-instagram-bg" />
             </b-nav-item>
             <b-nav-item href="https://www.youtube.com/user/nickwu241" target="_blank">
-              <span class="fa fa-youtube" />
+              <span class="fa fa-round fa-youtube fa-youtube-bg" />
             </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
@@ -78,29 +78,27 @@
           </b-col>
         </b-row>
         <!-- Contact -->
-        <!-- <b-row v-if="activeItemTitle == 'Contact'">
+        <b-row v-if="activeItemTitle === 'Contact'">
           <b-col md="2"></b-col>
           <b-col md="8">
-            <form class="border border-dark bg-white m-2 p-3">
-              <p class="h4 mb-4 text-center">Contact Nick </p>
-
-              <label for="contact-email">Your email</label>
-              <input type="email" id="contact-email" class="form-control mb-4" placeholder="example@gmail.com">
-
-              <label for="contact-message">Your message</label>
-              <textarea id="contact-message" class="form-control mb-4" placeholder="Hi Nick, I'm looking for a developer to create an app!"></textarea>
-
-              <div class="custom-control custom-checkbox mb-4">
-                  <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                  <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-              </div>
-              <div class="d-flex justify-content-center">
-                <button class="btn btn-info btn-lg btn-round" type="submit">Send message</button>
-              </div>
-            </form>
+            <h1 class="mt-2">Getting in touch</h1>
+            <p>Message me on any of these platforms:</p>
+            <div class="d-flex flex-wrap">
+              <a class="btn btn-social btn-envelope mr-2 mb-2" href="mailto:nickwu241@gmail.com" target="_blank">
+                <span class="fa fa-envelope-o"></span> nickwu241@gmail.com
+              </a>
+              <a class="btn btn-social btn-linkedin mr-2 mb-2" href="https://linkedin.com/in/nick-wu" target="_blank">
+                <span class="fa fa-linkedin"></span> nick-wu
+              </a>
+              <a class="btn btn-social btn-instagram mr-2 mb-2" href="https://www.instagram.com/nickwu241" target="_blank">
+                <span class="fa fa-instagram"></span> @nickwu241
+              </a>
+            </div>
+            <p class="mt-2">Or just write a message below:</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJrNuLMbDQpzNVauvBW5gtgsJ6UA1LnzG7gyC9YkE9rDj94w/viewform?embedded=true" width="100%" height="894" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
           </b-col>
           <b-col md="2"></b-col>
-        </b-row> -->
+        </b-row>
       </div>
     </b-container>
   </div>
@@ -118,7 +116,7 @@ export default {
       navItems: [
         { title: "Portfolio", isActive: true },
         { title: "Blog", isActive: false },
-        // { title: "Contact", isActive: false }
+        { title: "Contact", isActive: false }
       ],
       posts,
       projects
@@ -136,6 +134,9 @@ export default {
 </script>
 
 <style>
+/* Social Media buttons for Contact section */
+@import './bootstrap-social.css';
+
 /* Fill up the whole height with a background colour */
 html, body {
   min-height: 100%;
@@ -202,7 +203,7 @@ html, body {
   transition: 500ms;
 }
 
-.fa {
+.fa-round {
   margin-right: 0.6rem;
   padding: 0.6rem;
   text-align: center;
@@ -216,34 +217,34 @@ html, body {
     height: 20vw;
   }
 
-  .fa {
+  .fa-round {
     margin: 0;
   }
 }
 
-.fa:hover {
+.fa-round:hover {
   opacity: 0.7;
   color: white;
   text-decoration: none;
 }
 
-.fa-linkedin {
+.fa-linkedin-bg {
   background-color: #007bb5;
 }
 
-.fa-github {
+.fa-github-bg {
   background-color: black;
 }
 
-.fa-medium {
+.fa-medium-bg {
   background-color: green;
 }
 
-.fa-instagram {
+.fa-instagram-bg {
   background-color: #bc2a8d;
 }
 
-.fa-youtube {
+.fa-youtube-bg {
   background-color: #cc181e;
 }
 </style>
