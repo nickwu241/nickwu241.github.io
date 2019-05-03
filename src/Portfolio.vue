@@ -22,8 +22,9 @@
         I also spent 4 months doing research for a software performamce analysis tool at the University of British Columbia.
       </p>
       <p>
-        <strong>Looking for a Developer?</strong> Check out my
-        <b-link class="resume-link" href="resume.pdf" target="_blank">resume</b-link>& projects below.
+        <strong>Looking for a Developer?</strong>
+        Check out my work and
+        <b-link to="contact" class="contact-link">get in touch</b-link>!
       </p>
       <!-- <p>If you can't find me hacking away at projects, then I'll most likely be playing soccer ⚽, guitar 🎸, board games 🎲, video games 🎮, eating yummy food 🍛, exploring the world ✈️, or watching Netflix 📺.</p> -->
     </b-col>
@@ -72,20 +73,18 @@ export default {
 }
 
 .shopify-link:hover {
-  color: inherit;
-  background: rgba(7, 241, 16, 0.2);
+  background: rgba(4, 204, 10, 0.2);
   text-decoration: none;
   transition: 500ms;
 }
 
-.resume-link {
+.contact-link {
   color: rgb(66, 164, 244);
   border-bottom: 2px solid rgb(66, 164, 244);
 }
 
-.resume-link:hover {
-  color: inherit;
-  background: #cee6fd;
+.contact-link:hover {
+  background: #b9d6f1;
   text-decoration: none;
   transition: 500ms;
 }

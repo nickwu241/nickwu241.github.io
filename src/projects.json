@@ -1,11 +1,10 @@
-[
-  {
+[{
     "name": "Jump Awake",
     "subtitle": "Best IoT & Best Google Cloud Platform Hack @ XdHacks 2019",
     "date": "February 2019",
     "description": "An IoT alarm that gets you active in the morning by requiring users to do physical exercise routines such as jumping jacks, squats, burpees, sit ups in order to shut off the alarm.",
     "imgsrc": [
-      "https://raw.githubusercontent.com/nickwu241/JumpAwake/master/other_assets/Screens.png"
+      "src/assets/jump-awake.min.png"
     ],
     "ghlink": "https://github.com/nickwu241/JumpAwake"
   },
@@ -15,7 +14,7 @@
     "date": "January 2019",
     "description": "Show who's saying what and transcribes speakers in real time, then exports the meeting minutes to Google Sheets.",
     "imgsrc": [
-      "https://raw.githubusercontent.com/nickwu241/WhoSaidWhat/master/demo-images/ui_and_export.png"
+      "src/assets/who-said-what.min.png"
     ],
     "ghlink": "https://github.com/nickwu241/WhoSaidWhat"
   },
@@ -25,7 +24,7 @@
     "date": "January 2019",
     "description": "Miru makes discovering new places and seeing the world easier for the visually impaired. All the functionality in Miru is activated using voice, and the feedback is also in audio-form, which means it’s super accessible for the visually impaired.",
     "imgsrc": [
-      "src/assets/miru.png"
+      "src/assets/miru.min.png"
     ],
     "hackerearthlink": "https://hackwashington.hackerearth.com/sprints/hack-washington-2019/dashboard/caa7112/submission/"
   },
@@ -35,7 +34,7 @@
     "date": "May 2018",
     "description": "Spotty advertises your unused parking spaces to drivers who are looking for parking. Using IoT, Spotty uses cameras and sensors to provide automated security, and the status of your parking space ensuring that your property is safe.",
     "imgsrc": [
-      "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/raspberry-pi-flow.png",
+      "src/assets/spotty.min.png",
       "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/orange-pi-flow.png",
       "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/raspberry-pi-dashboard.png",
       "https://raw.githubusercontent.com/nickwu241/spotty/master/demo/mobile-login.png",
@@ -50,7 +49,7 @@
     "date": "October 2018",
     "description": "An Alexa skill to tell you your assignment deadlines, just say \"open assignment deadlines\".",
     "imgsrc": [
-      "https://raw.githubusercontent.com/nickwu241/alexa-assignment-deadlines/master/splashscreen.jpg",
+      "src/assets/alexa-assignments-deadlines.min.jpg",
       "https://raw.githubusercontent.com/nickwu241/alexa-assignment-deadlines/master/websettings.png"
     ],
     "ghlink": "https://github.com/nickwu241/alexa-assignment-deadlines"
@@ -61,7 +60,7 @@
     "date": "February 2018",
     "description": "Automatic notifications to remind PR reviewers, multi-repo issue list, and slack notifications for unread Github notifications for better productivity.",
     "imgsrc": [
-      "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/dashboard2.png",
+      "src/assets/review-me.min.png",
       "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/issues.png",
       "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_slack.png",
       "https://raw.githubusercontent.com/nickwu241/review-me/master/demo/ask_reviewer_sms.png"
@@ -74,7 +73,7 @@
     "date": "April 2017 - Present",
     "description": "A website that offers UBC students all the possible schedules that can be made, given the courses they wish to take.",
     "imgsrc": [
-      "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/one.png",
+      "src/assets/ubc-course-schedule-creator.min.png",
       "https://raw.githubusercontent.com/smart-cs/scheduler/master/demo/demo.gif"
     ],
     "demolink": "https://smart-cs.github.io/scheduler",
@@ -85,7 +84,7 @@
     "subtitle": "Top Group Project in CPEN 391",
     "date": "January 2017 – April 2017",
     "description": "A toy turret that can aim, take photos, and be fired by the user.",
-    "imgsrc": ["http://img.youtube.com/vi/gDMdrrUyVQY/0.jpg"],
+    "imgsrc": ["src/assets/desktop-launcher.min.jpg"],
     "videosrc": [
       "https://www.youtube.com/embed/gDMdrrUyVQY",
       "https://www.youtube.com/embed/LGqRxaPduhk"
@@ -98,7 +97,7 @@
     "date": "March 2017 - May 2017",
     "description": "An Android application to solve “Where should we eat?” situations by randomly selecting a nearby restaurant on phone shake.",
     "imgsrc": [
-      "src/assets/foodshake.png",
+      "src/assets/food-shake.min.png",
       "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/main_screen.png",
       "https://raw.githubusercontent.com/nickwu241/FoodShake/master/demo/result_screen.png"
     ],

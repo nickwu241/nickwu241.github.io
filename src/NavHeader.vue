@@ -6,9 +6,12 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/" exact>Portfolio</b-nav-item>
-          <b-nav-item to="/blog">Blog</b-nav-item>
-          <b-nav-item to="/contact">Contact</b-nav-item>
-          <b-nav-item href="resume.pdf" target="_blank">Resume</b-nav-item>
+          <b-nav-item to="/blog" exact>Blog</b-nav-item>
+          <b-nav-item to="/contact" exact>Contact</b-nav-item>
+          <b-nav-item href="resume.pdf" target="_blank">
+            Resume
+            <i class="fa fa-xs fa-external-link"></i>
+          </b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav style="flex-direction: row;">
           <b-nav-item href="https://linkedin.com/in/nick-wu" target="_blank">
