@@ -29,17 +29,9 @@
     "title": "Atlantis + Slack Integration, an Open Source Contribution",
     "summary":
       "My experience on contributing to Atlantis, a standalone application that listens for Terraform pull request events via webhooks.",
-    "link": "http://code.hootsuite.com/atlantis-slack-integration/",
-    "source": "Hootsuite Code Blog",
+    "link": "https://medium.com/hootsuite-engineering/atlantis-slack-integration-an-open-source-contribution-8eadc87407f5",
+    "source": "Medium",
     "duration": "5 mins",
     "date": "12/22/2017"
-  },
-  {
-    "title": "My Internship at Hootsuite",
-    "summary": "Sharing my contributions and experience!",
-    "link": "http://code.hootsuite.com/co-ops/nicholas-wu/",
-    "source": "Hootsuite Code Blog",
-    "duration": "3 mins",
-    "date": "12/20/2017"
   }
 ]
