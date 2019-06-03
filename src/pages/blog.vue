@@ -22,7 +22,7 @@ import posts from '~/assets/posts.json'
 export default {
   head() {
     return {
-      script: [{ src: 'upscribed.js' }]
+      script: [{ src: 'https://nickwu241.github.io/upscribed.js' }]
     }
   },
   data() {
