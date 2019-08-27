@@ -1,7 +1,7 @@
 #!/bin/sh
 set -xeuo pipefail
 
-if [[ $# -ne 1 ]]; then 
+if [[ $# -ne 1 ]]; then
   echo "Usage: $0 <update description>"
   exit 1
 fi
