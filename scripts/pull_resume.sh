@@ -8,6 +8,10 @@ fi
 
 RESUME_URL='https://www.dropbox.com/s/efojf141z0jas61/resume.pdf'
 curl ${RESUME_URL} -L > resume.pdf
+
+# Copy it to our source code too so it stays in sync
+cp resume.pdf src/static
+
 git add resume.pdf
 git commit -m "Resume: $1"
 git push origin master
