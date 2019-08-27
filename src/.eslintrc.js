@@ -10,14 +10,14 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
     'prettier',
-    'prettier/vue'
+    'prettier/vue',
+    'plugin:vue/essential',
+    'eslint:recommended'
   ],
-  plugins: [
-    'prettier'
-  ],
+  plugins: ['prettier'],
   // add your custom rules here
   rules: {
+    'no-console': 'off'
   }
 }

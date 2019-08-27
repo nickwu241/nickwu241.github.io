@@ -1,19 +1,19 @@
-# nickwu
+# nickwu241.github.io
 
-> Nick Wu, Software Engineer
+> Nick Wu&#39;s personal website
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install
+$ npm run install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
 
 # build for production and launch server
 $ npm run build
-$ npm start
+$ npm run start
 
 # generate static project
 $ npm run generate
