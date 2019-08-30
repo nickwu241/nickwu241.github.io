@@ -16,7 +16,27 @@ export default {
       { name: 'author', content: 'Nicholas Wu' },
       {
         name: 'keywords',
-      content: 'Nicholas Wu, Nicholas, Nick, Wu, nickwu241'
+        content: 'Nicholas Wu, Nicholas, Nick, Wu, nickwu241'
+      },
+      {
+        name: 'url',
+        content: 'https://nickwu241.github.io'
+      },
+      {
+        name: 'og:title',
+        content: 'Nicholas Wu'
+      },
+      {
+        name: 'og:description',
+        content: process.env.npm_package_description || ''
+      },
+      {
+        name: 'og:url',
+        content: 'https://nickwu241.github.io'
+      },
+      {
+        name: 'og:image"',
+        content: 'https://nickwu241.github.io/images/profile.png'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
