@@ -4,8 +4,7 @@
     "subtitle": "5 stars rating & 100+ downloads on Google Play",
     "date": "July 2019 - Present",
     "description": "Companion app for Teamfight Tactics aggregating all the information you need to be the best tactician including: Item Recipes, Classes & Origins, Drop Rates, Champion Stats, and Patch Notes.",
-    "imgsrc": "images/projects/teamfight-tactics-cheatsheet.png",
-    "videosrc": "https://www.youtube.com/watch?v=pDBKZgbR0xk",
+    "videosrc": "https://www.youtube.com/embed/pDBKZgbR0xk",
     "googleplaystoresrc": "https://play.google.com/store/apps/details?id=wu.nick.tft",
     "ghlink": "https://github.com/nickwu241/teamfight_tactics_cheatsheet_app"
   },
@@ -14,8 +13,7 @@
     "subtitle": "Instagram Clone",
     "date": "July 2019 - Present",
     "description": "An Instagram Clone I built using the Flutter framework. I also wrote a blog post about my experience writing this app! :)",
-    "imgsrc": "images/projects/instagroot.png",
-    "videosrc": "https://www.youtube.com/watch?v=LUpphBjNR5E",
+    "videosrc": "https://www.youtube.com/embed/LUpphBjNR5E",
     "blogsrc": "https://medium.com/@nickwu241/creating-an-instagram-clone-with-flutter-4e81eab2ed69",
     "ghlink": "https://github.com/nickwu241/instagroot"
   },
@@ -81,7 +79,6 @@
     "subtitle": "Top Group Project in CPEN 391",
     "date": "January 2017 – April 2017",
     "description": "A toy turret that can aim, take photos, and be fired by the user.",
-    "imgsrc": "images/projects/desktop-launcher.png",
     "videosrc": "https://www.youtube.com/embed/gDMdrrUyVQY",
     "ghlink": "https://zeyadtamimi.github.io/DesktopLauncher"
   },
