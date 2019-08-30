@@ -11,6 +11,6 @@ rm -rf blog contact images 200.html favicon.png index.html
 cp -r src/dist/ .
 
 # Push the new files
-git add blog contact images 200.html favicon.png index.html && \
+git add _nuxt blog contact images 200.html favicon.png index.html && \
   git commit -m "Deploy $(git rev-parse HEAD)" && \
   git push origin master
