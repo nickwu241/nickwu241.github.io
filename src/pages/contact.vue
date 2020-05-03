@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 .btn {
   @apply inline-flex text-white font-bold p-3 rounded-lg mb-2 mr-1;
 }

@@ -1,46 +1,30 @@
 <template>
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full lg:w-9/12 m-4 p-2 md:px-10 md:pb-5">
-      <p class="text-4xl">
-        👋 Hi, I'm Nick!
-      </p>
-      <p class="text-lg sm:text-xl">
-        <span class="font-semibold"> Software Engineer </span> | Previously at
-        <br class="sm:hidden" />
-        <span class="break-keep-all">
-          <img
-            src="images/icons/shopify.png"
-            class="object-center object-scale-down inline w-6 h-6"
-          />
-          Shopify,
-        </span>
-        <span>
-          <img
-            src="images/icons/hootsuite.png"
-            class="object-center object-scale-down inline w-6 h-6"
-          />
-          Hootsuite,
-        </span>
-        <span>
-          <img
-            src="images/icons/safesoftware.png"
-            class="object-center object-scale-down inline w-6 h-6"
-          />
-          Safe Software
-        </span>
-      </p>
-      <p class="text-lg sm:text-xl mt-2">
-        <span class="font-semibold">UBC '19</span> | Computer Engineering,
-        <br class="sm:hidden" />
-        Dean's Honour List
-      </p>
+  <div>
+    <div class="flex flex-wrap">
+      <div class="w-1/3 self-center hidden lg:block">
+        <img
+          src="/images/undraw_welcome_cats_thqn.svg"
+          alt="Welcome!"
+          class="p-4"
+        />
+      </div>
+      <div class="w-full lg:w-2/3 max-w-3xl">
+        <IntroBio class="m-3 sm:m-5"></IntroBio>
+      </div>
     </div>
-    <div
-      v-for="project in projects"
-      :key="project.name"
-      class="w-auto md:w-5/12 m-2 md:m-4"
-    >
-      <ProjectCard :project="project" />
+    <div class="flex flex-wrap mb-5">
+      <div class="w-auto lg:w-1/2 sm:p-2 sm:pr-1">
+        <ProjectCardV2 :project="projects[0]" />
+      </div>
+      <div class="w-auto lg:w-1/2 sm:p-2 sm:pl-1">
+        <ProjectCardV2 :project="projects[1]" />
+      </div>
+      <div class="w-auto lg:w-1/2 sm:p-2 sm:pr-1">
+        <ProjectCardV2 :project="projects[2]" />
+      </div>
+      <div class="w-auto lg:w-1/2 sm:p-2 sm:pl-1">
+        <ProjectCardV2 :project="projects[3]" />
+      </div>
     </div>
   </div>
 </template>
@@ -48,11 +32,15 @@
 <script>
 import projects from '~/assets/projects.json'
 
-import ProjectCard from '~/components/ProjectCard.vue'
+// import ProjectCard from '~/components/ProjectCard.vue'
+import IntroBio from '~/components/IntroBio.vue'
+import ProjectCardV2 from '~/components/ProjectCardV2.vue'
 
 export default {
   components: {
-    ProjectCard
+    // ProjectCard,
+    ProjectCardV2,
+    IntroBio
   },
   data() {
     return { projects }
@@ -60,5 +48,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 </style>

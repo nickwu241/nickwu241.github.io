@@ -17,6 +17,11 @@ export default {
 
 <style>
 #app {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* font-family: 'Open Sans'; */
+  font-family: Montserrat;
+  /* font-family: Helvetica; */
+  /* font-family: 'Roboto'; */
+  /* font-family: 'League Spartan'; */
 }
 </style>

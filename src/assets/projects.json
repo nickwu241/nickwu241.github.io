@@ -1,21 +1,40 @@
 [
   {
     "name": "Teamfight Tactics Cheatsheet",
-    "subtitle": "5 stars rating & 100+ downloads on Google Play",
+    "subtitle": "1000+ downloads on Google Play",
     "date": "July 2019 - Present",
     "description": "Companion app for Teamfight Tactics aggregating all the information you need to be the best tactician including: Item Recipes, Classes & Origins, Drop Rates, Champion Stats, and Patch Notes.",
-    "videosrc": "https://www.youtube.com/embed/pDBKZgbR0xk",
+    "imgsrc": "images/projects/teamfight-tactics-cheatsheet.png",
+    "videosrc": "https://www.youtube.com/embed/pDBKZgbR0xk?rel=0&modestbranding=1",
     "googleplaystoresrc": "https://play.google.com/store/apps/details?id=wu.nick.tft",
     "ghlink": "https://github.com/nickwu241/teamfight_tactics_cheatsheet_app"
   },
   {
+    "name": "Save The Date",
+    "subtitle": "Hackathon Winner @ CalHacks V 2020",
+    "date": "Mar 2020",
+    "description": "Add events to your calendar just by taking screenshots! It's that easy :)",
+    "imgsrc": "images/projects/save-the-date.png",
+    "ghlink": "https://github.com/nickwu241/save_the_date"
+  },
+  {
     "name": "Instagroot",
-    "subtitle": "Instagram Clone",
+    "subtitle": "50+ stars & 15+ forks on GitHub",
     "date": "July 2019 - Present",
     "description": "An Instagram Clone I built using the Flutter framework. I also wrote a blog post about my experience writing this app! :)",
-    "videosrc": "https://www.youtube.com/embed/LUpphBjNR5E",
+    "imgsrc": "images/projects/instagroot.png",
+    "videosrc": "https://www.youtube.com/embed/LUpphBjNR5E?rel=0&modestbranding=1",
     "blogsrc": "https://medium.com/@nickwu241/creating-an-instagram-clone-with-flutter-4e81eab2ed69",
+    "googleplaystoresrc": "https://play.google.com/store/apps/details?id=wu.nick.instagroot",
     "ghlink": "https://github.com/nickwu241/instagroot"
+  },
+  {
+    "name": "Glass Heaven",
+    "subtitle": "Clearly see company overviews.",
+    "date": "Oct 2019",
+    "description": "Web app to quickly see company overviews given a list of company names.",
+    "imgsrc": "images/projects/glass-heaven.png",
+    "ghlink": "https://github.com/nickwu241/glass-heaven"
   },
   {
     "name": "Review Me",

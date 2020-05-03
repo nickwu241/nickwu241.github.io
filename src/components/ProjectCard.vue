@@ -146,7 +146,7 @@ export default {
 
 <style scoped>
 .tag {
-  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
+  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-bold text-gray-700 mr-2 mb-2;
 }
 
 .btn {

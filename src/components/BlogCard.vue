@@ -30,7 +30,10 @@
             </p>
           </div>
           <!-- sm-: show image on top right -->
-          <img class="md:hidden object-contain object-top h-24 w-24" :src="post.imgsrc" />
+          <img
+            class="md:hidden object-contain object-top h-24 w-24"
+            :src="post.imgsrc"
+          />
         </div>
       </div>
     </a>
