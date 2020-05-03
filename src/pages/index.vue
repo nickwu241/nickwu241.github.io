@@ -12,7 +12,7 @@
         <IntroBio class="m-3 sm:m-5"></IntroBio>
       </div>
     </div>
-    <div class="flex flex-wrap mb-5">
+    <div class="flex flex-wrap pb-5">
       <div class="w-auto lg:w-1/2 sm:p-2 sm:pr-1">
         <ProjectCardV2 :project="projects[0]" />
       </div>
